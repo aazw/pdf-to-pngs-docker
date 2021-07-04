@@ -26,3 +26,4 @@ jobs:
           context: docker
           tags: |
             docker.pkg.github.com/${{ github.repository }}/pdf2pngs:${{ github.sha }}
+            docker.pkg.github.com/${{ github.repository }}/pdf2pngs:latest
