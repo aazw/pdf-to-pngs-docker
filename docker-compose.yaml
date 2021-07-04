@@ -1,0 +1,11 @@
+version: "3"
+services:
+  imagemagick:
+    build: ./docker
+    volumes:
+    - "./workspace:/workspace"
+    environment:
+    - "INPUT_FILENAME=hogehoge"
+    - "OUTPUT_FILENAME_TEMP=_%03d"
+    - "DENSITY=200"
+    - "QUALITY=100"

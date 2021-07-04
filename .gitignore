@@ -1,0 +1,7 @@
+# gitkeep
+workspace/*
+!workspace/.gitkeep
+
+# Mac
+.DS_Store
+._*
