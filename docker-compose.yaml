@@ -1,7 +1,8 @@
 version: "3"
 services:
   imagemagick:
-    build: ./docker
+    # build: ./docker
+    image: docker.pkg.github.com/aazw/pdf-to-pngs-docker/pdf2pngs:latest
     volumes:
     - "./workspace:/workspace"
     environment:
