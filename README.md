@@ -4,22 +4,31 @@ Convert a PDF file to PNG images by ImageMagick/GhostScript.
 
 ### Run
 
-```bash
-# Pull image
-docker pull docker.pkg.github.com/aazw/pdf-to-pngs-docker/pdf2pngs:latest
+1. Prepare docker image
 
-# OR
-# Build image 
-# Note: fix build settings in docker-compose.yml before build image
-docker-compose build
+    ```bash
+    # Pull image
+    docker pull docker.pkg.github.com/aazw/pdf-to-pngs-docker/pdf2pngs:latest
 
-# Exec
-docker-compose run -e INPUT_FILENAME=<filename_in_workspace_dir>.pdf imagemagick
-# e.g. 
-# > ls workspace
-# doc.pdf
-# > docker-compose run -e INPUT_FILENAME=doc.pdf imagemagick
-```
+    # OR
+    # Build image 
+    # Note: fix build settings in docker-compose.yml before build image
+    docker-compose build
+    ```
+
+1. Put a PDF file in `workspace` directory 
+
+1. Run
+
+   ```bash
+    # Exec
+    docker-compose run -e INPUT_FILENAME=<filename_in_workspace_dir>.pdf imagemagick
+
+    # e.g. 
+    # > ls workspace
+    # doc.pdf
+    # > docker-compose run -e INPUT_FILENAME=doc.pdf imagemagick
+    ```
 
 ### References
 
