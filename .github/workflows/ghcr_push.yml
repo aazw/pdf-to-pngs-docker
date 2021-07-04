@@ -23,5 +23,6 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
+          context: docker
           tags: |
             docker.pkg.github.com/${{ github.repository }}/pdf2pngs:${{ github.sha }}
