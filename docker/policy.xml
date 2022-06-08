@@ -57,8 +57,8 @@
   <!-- <policy domain="system" name="memory-map" value="anonymous"/> -->
   <!-- <policy domain="system" name="max-memory-request" value="256MiB"/> -->
   <!-- <policy domain="resource" name="temporary-path" value="/tmp"/> -->
-  <policy domain="resource" name="memory" value="1024MiB"/>
-  <policy domain="resource" name="map" value="512MiB"/>
+  <policy domain="resource" name="memory" value="4096MiB"/>
+  <policy domain="resource" name="map" value="4096MiB"/>
   <policy domain="resource" name="width" value="16KP"/>
   <policy domain="resource" name="height" value="16KP"/>
   <!-- <policy domain="resource" name="list-length" value="128"/> -->
